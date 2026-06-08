@@ -1,0 +1,285 @@
+Love it! Let's build AND learn at the same time. 🔥
+
+I'll explain **every line** so you actually understand what you're writing — not just copy-paste.
+
+---
+
+## 🧱 Week 1 — HTML Structure of Your Portfolio
+
+### First, understand how HTML works
+
+HTML is like the **skeleton** of a webpage. It gives structure. Think of it like building a house — HTML is the walls and rooms. CSS is the paint and decoration. JavaScript is the electricity (makes things work).
+
+Every HTML element looks like this:
+```html
+<tagname> content goes here </tagname>
+```
+The first one is the **opening tag**, the second with `/` is the **closing tag**.
+
+---
+
+### The 3 rules of HTML structure
+
+**Rule 1** — Every HTML file starts with this exact skeleton:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Info about the page — not visible to user -->
+</head>
+<body>
+    <!-- Everything visible to user goes here -->
+</body>
+</html>
+```
+
+**Rule 2** — `<head>` holds page settings. `<body>` holds everything you see.
+
+**Rule 3** — Tags are **nested** — one inside another, like boxes inside boxes.
+
+---
+
+### Now let's build your portfolio — section by section
+
+Your portfolio has **5 sections:**
+```
+Navbar → Home → About → Projects → Contact
+```
+
+Open **VS Code**, create a folder called `my-portfolio`, inside it create `index.html`. Now write this — and read every comment carefully:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- This tells the browser what kind of characters to use -->
+    <meta charset="UTF-8">
+
+    <!-- This makes your site responsive on mobile phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the title shown on the browser tab -->
+    <title>Ammu | Portfolio</title>
+
+    <!-- We'll link our CSS file here later -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <!-- nav = navigation bar at the top -->
+    <nav class="navbar">
+        <div class="logo">Ammu</div>
+
+        <!-- ul = unordered list, li = list item, a = link -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== HOME SECTION ========== -->
+    <!-- id="home" lets the navbar link jump to this section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <p class="greeting">Hi there, I'm</p>
+            <!-- h1 = biggest heading on the page, use only once -->
+            <h1 class="my-name">Ammu</h1>
+            <h2 class="my-role">Aspiring Full Stack Developer</h2>
+            <p class="my-desc">
+                B.Tech 2nd Year Student passionate about building 
+                web applications and solving problems with code.
+            </p>
+
+            <!-- Two buttons -->
+            <div class="home-buttons">
+                <a href="#projects" class="btn btn-primary">View My Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section">
+        <!-- h2 = second level heading -->
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    I'm a B.Tech 2nd year student at Institute of Aeronautical Engineering,
+                    currently learning Full Stack Development with Java, Spring Boot, 
+                    and React. I'm passionate about building projects that solve 
+                    real problems.
+                </p>
+                <p>
+                    I'm actively practising Data Structures & Algorithms on LeetCode
+                    and working towards a software engineering career.
+                </p>
+            </div>
+
+            <!-- Skills list -->
+            <div class="skills-container">
+                <h3>Technical Skills</h3>
+
+                <!-- Each skill has a name and a progress bar -->
+                <div class="skill">
+                    <span class="skill-name">Java</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 50%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-name">HTML & CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 65%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 20%"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-name">DSA (LeetCode)</span>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 10%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">My Projects</h2>
+
+        <!-- div = a generic container box, used for grouping -->
+        <div class="projects-grid">
+
+            <!-- Project Card 1 — your current project -->
+            <div class="project-card">
+                <div class="project-icon">🌐</div>
+                <h3>Personal Portfolio</h3>
+                <p>A responsive portfolio website built with HTML, CSS 
+                   and JavaScript to showcase my skills and projects.</p>
+                <div class="project-tags">
+                    <!-- small tag labels showing tech used -->
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <a href="#" class="btn btn-small">Live Demo</a>
+            </div>
+
+            <!-- Project Card 2 — coming soon placeholder -->
+            <div class="project-card coming-soon">
+                <div class="project-icon">🎓</div>
+                <h3>Student Result System</h3>
+                <p>Full stack application to manage and display student 
+                   results. Built with React + Spring Boot. Coming soon.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Java</span>
+                </div>
+                <span class="coming-tag">🚧 In Progress</span>
+            </div>
+
+            <!-- Project Card 3 — coming soon placeholder -->
+            <div class="project-card coming-soon">
+                <div class="project-icon">❓</div>
+                <h3>Online Quiz Platform</h3>
+                <p>Real-time quiz platform with WebSockets, 
+                   leaderboard and live score updates. Coming soon.</p>
+                <div class="project-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">WebSockets</span>
+                    <span class="tag">Spring Boot</span>
+                </div>
+                <span class="coming-tag">🚧 Planned</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-desc">
+            I'm open to internship opportunities, project collaborations, 
+            and connecting with fellow developers!
+        </p>
+
+        <div class="contact-links">
+            <!-- Replace # with your actual links later -->
+            <a href="mailto:youremail@gmail.com" class="contact-card">
+                <span class="contact-icon">📧</span>
+                <span>Email Me</span>
+            </a>
+            <a href="#" class="contact-card">
+                <span class="contact-icon">💼</span>
+                <span>LinkedIn</span>
+            </a>
+            <a href="#" class="contact-card">
+                <span class="contact-icon">🐙</span>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <p>Made with ❤️ by Ammu | 2025</p>
+    </footer>
+
+    <!-- Link JavaScript file — always at the bottom of body -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
+
+---
+
+## 🧠 What You Just Learned
+
+| Concept | Tag | What it does |
+|---|---|---|
+| Page structure | `html, head, body` | Skeleton of every webpage |
+| Headings | `h1, h2, h3` | Titles — h1 is biggest |
+| Paragraph | `p` | Normal text |
+| Link | `a href=""` | Clickable link |
+| List | `ul, li` | Navigation menus |
+| Section | `section` | Groups a page section |
+| Container | `div` | Groups any elements |
+| Navigation | `nav` | Top navbar |
+| Footer | `footer` | Bottom of page |
+| class | `class=""` | Names elements for CSS styling |
+| id | `id=""` | Unique name — used for jump links |
+
+---
+
+## ✅ Your Task Right Now
+
+1. Open **VS Code** → create folder `my-portfolio`
+2. Create `index.html` inside it
+3. Copy the code above and paste it
+4. Right-click the file → **Open with Live Server** (install Live Server extension in VS Code first)
+5. You'll see your raw unstyled portfolio in the browser
+
+It'll look plain right now — **that's perfectly normal.** Next session we add CSS and it transforms completely. 🎨
+
+---
+
+**Next session** → We write `style.css` and make this look like a real modern portfolio with colors, cards, animations. 
+
+Come back when you've done this step and I'll take you to Week 2! 💪
