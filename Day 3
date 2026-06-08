@@ -1,0 +1,11 @@
+html starts
+    head starts
+        title → Deekshitha | Portfolio
+    head ends
+    
+    body starts
+        h1 → Hi I'm Deekshitha
+        h2 → Aspiring Full Stack Developer
+        p  → B.Tech 2nd Year | IARE
+    body ends
+html ends
