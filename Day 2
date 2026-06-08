@@ -1,0 +1,7 @@
+Download and install VS Code → code.visualstudio.com
+Create folder my-portfolio
+Create index.html inside it
+Paste the HTML code I gave you earlier
+Install "Live Server" extension in VS Code
+Right click index.html → Open with Live Server
+See your portfolio in browser 
