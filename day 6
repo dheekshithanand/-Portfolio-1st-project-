@@ -1,0 +1,23 @@
+This CSS styles a **navigation bar** for a portfolio website.
+
+### Description for Documentation/README
+
+> The navigation bar is designed using CSS Flexbox to create a clean and responsive layout. It features a dark background, a logo/title section on the left, and navigation links aligned horizontally on the right. The links are styled with white text and no underlines, providing a modern and professional appearance suitable for a portfolio website.
+
+### Code Explanation
+
+* `background-color: #12121a;` → Sets a dark background color.
+* `padding: 16px 32px;` → Adds space inside the navigation bar.
+* `display: flex;` → Uses Flexbox for layout.
+* `justify-content: space-between;` → Places logo on the left and menu on the right.
+* `align-items: center;` → Vertically centers all items.
+* `font-size: 20px;` → Makes the logo/title text larger.
+* `font-weight: bold;` → Makes the logo/title text bold.
+* `list-style: none;` → Removes bullet points from the menu.
+* `gap: 20px;` → Adds spacing between menu items.
+* `text-decoration: none;` → Removes underlines from links.
+* `color: white;` → Makes text and links white for contrast against the dark background.
+
+**One-line description:**
+
+> A modern dark-themed navigation bar built with Flexbox for easy navigation across portfolio sections.
