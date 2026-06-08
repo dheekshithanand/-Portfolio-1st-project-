@@ -1,8 +1,4 @@
-Love it! Let's build AND learn at the same time. 🔥
 
-I'll explain **every line** so you actually understand what you're writing — not just copy-paste.
-
----
 
 ## 🧱 Week 1 — HTML Structure of Your Portfolio
 
@@ -250,7 +246,6 @@ Open **VS Code**, create a folder called `my-portfolio`, inside it create `index
 
 ---
 
-## 🧠 What You Just Learned
 
 | Concept | Tag | What it does |
 |---|---|---|
@@ -267,18 +262,12 @@ Open **VS Code**, create a folder called `my-portfolio`, inside it create `index
 | id | `id=""` | Unique name — used for jump links |
 
 ---
-
-## ✅ Your Task Right Now
-
 1. Open **VS Code** → create folder `my-portfolio`
 2. Create `index.html` inside it
 3. Copy the code above and paste it
 4. Right-click the file → **Open with Live Server** (install Live Server extension in VS Code first)
 5. You'll see your raw unstyled portfolio in the browser
 
-It'll look plain right now — **that's perfectly normal.** Next session we add CSS and it transforms completely. 🎨
-
----
 
 **Next session** → We write `style.css` and make this look like a real modern portfolio with colors, cards, animations. 
 
